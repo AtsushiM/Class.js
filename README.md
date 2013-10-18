@@ -6,17 +6,17 @@ var Class1 = Class.extend({
         init: function(config) {
             // write init code.
         },
-        method1: function() {
+        method: function() {
             // write method.
-        },
-        on: function() {
+        }
+    }),
+    Class2 = Class1.extend({
+        // extend Class1 method & props.
+        method: function() {
             // override method.
 
             // call super method.
             this._super.apply(this, arguments);
-        },
-    }),
-    Class2 = Class1.extend({
-        // extend Class1 method & props.
+        }
     });
 ```
